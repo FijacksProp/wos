@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+coverage/
+
+# Local assets and temp files
+media/
+vite-dev.log
+*.local
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Caches
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
