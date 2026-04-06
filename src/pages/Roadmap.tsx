@@ -6,26 +6,26 @@ import wolfMoon from "@/assets/wolf-moon.jpg";
 const phases = [
   {
     phase: "Phase 1",
-    title: "Whitepaper Release",
-    items: ["Official whitepaper graphic released on April 4, 2026", "Core manifesto, legend, and tokenomics made public", "X-driven launch countdown intensified"],
-    status: "complete",
+    title: "The Howl",
+    items: ["Launch on Pump.fun", "First 1,000 holders = official Pack members", "Community raids & alpha calls to build momentum"],
+    status: "ongoing",
   },
   {
     phase: "Phase 2",
-    title: "Pump.fun Launch",
-    items: ["Scheduled for April 20, 2026", "100% fair launch on Solana via Pump.fun", "Liquidity lock, LP burn, and renounced contract messaging"],
-    status: "upcoming",
+    title: "The Bite",
+    items: ["DexScreener trending", "First CEX whispers", "'Eat the Charts' viral campaign", "Wolf Pack merch & meme factory activated"],
+    status: "soon",
   },
   {
     phase: "Phase 3",
     title: "Post-Launch Push",
-    items: ["Dominate the meme meta", "Grow the pack on strong community goals", "Plant the $WOS flag and chase massive success"],
+    items: ["Solana meme meta domination", "Major influencer pack joins", "$WOS becomes the official wolf of Solana", "Multi-chain howls (because one chain can’t contain this alpha)"],
     status: "future",
   },
   {
     phase: "Phase 4",
-    title: "Long-Term Vision",
-    items: ["Steady growth over short-lived hype", "Luxury, success, and ambitious upside for the pack", "No limits mentality across the movement"],
+    title: "The Feast",
+    items: ["$WOS becomes the benchmark 'wolf coin'", "Every new wolf meme pays tribute (in vibes)", "Pack members eat good forever"],
     status: "future",
   },
 ];
