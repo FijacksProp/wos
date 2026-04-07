@@ -6,42 +6,42 @@
 
 @layer base {
   :root {
-    --background: 222 40% 9%;
+    --background: 228 46% 5%;
     --foreground: 205 70% 97%;
-    --card: 218 32% 14%;
+    --card: 224 30% 10%;
     --card-foreground: 205 70% 97%;
-    --popover: 218 32% 14%;
+    --popover: 224 30% 10%;
     --popover-foreground: 205 70% 97%;
-    --primary: 196 100% 77%;
-    --primary-foreground: 220 48% 10%;
-    --secondary: 216 28% 18%;
+    --primary: 193 100% 70%;
+    --primary-foreground: 228 46% 5%;
+    --secondary: 222 28% 12%;
     --secondary-foreground: 205 70% 97%;
-    --muted: 217 22% 18%;
-    --muted-foreground: 208 20% 70%;
+    --muted: 223 22% 14%;
+    --muted-foreground: 212 18% 67%;
     --accent: 198 92% 72%;
-    --accent-foreground: 220 48% 10%;
+    --accent-foreground: 228 46% 5%;
     --destructive: 0 75% 58%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214 22% 22%;
-    --input: 214 22% 22%;
-    --ring: 196 100% 77%;
+    --border: 217 23% 18%;
+    --input: 217 23% 18%;
+    --ring: 193 100% 70%;
     --radius: 0.9rem;
-    --sidebar-background: 219 34% 12%;
+    --sidebar-background: 225 38% 8%;
     --sidebar-foreground: 205 70% 97%;
-    --sidebar-primary: 196 100% 77%;
-    --sidebar-primary-foreground: 220 48% 10%;
-    --sidebar-accent: 214 28% 18%;
+    --sidebar-primary: 193 100% 70%;
+    --sidebar-primary-foreground: 228 46% 5%;
+    --sidebar-accent: 223 26% 13%;
     --sidebar-accent-foreground: 205 70% 97%;
-    --sidebar-border: 214 22% 22%;
-    --sidebar-ring: 196 100% 77%;
-    --gold: 196 100% 77%;
-    --gold-dim: 200 62% 62%;
-    --gold-glow: 191 100% 86%;
-    --surface: 220 30% 13%;
-    --surface-elevated: 217 28% 17%;
-    --gradient-gold: linear-gradient(135deg, hsl(205 100% 88%), hsl(196 100% 75%), hsl(213 100% 70%));
-    --gradient-dark: linear-gradient(180deg, hsl(222 40% 9%), hsl(217 32% 12%));
-    --shadow-gold: 0 0 42px -10px hsl(196 100% 78% / 0.35);
+    --sidebar-border: 217 23% 18%;
+    --sidebar-ring: 193 100% 70%;
+    --gold: 193 100% 70%;
+    --gold-dim: 198 78% 58%;
+    --gold-glow: 190 100% 84%;
+    --surface: 225 30% 9%;
+    --surface-elevated: 223 28% 12%;
+    --gradient-gold: linear-gradient(135deg, hsl(200 100% 82%), hsl(193 100% 70%), hsl(220 92% 66%));
+    --gradient-dark: linear-gradient(180deg, hsl(228 46% 5%), hsl(223 38% 8%));
+    --shadow-gold: 0 0 42px -10px hsl(193 100% 70% / 0.32);
     --font-display: "Orbitron", sans-serif;
     --font-body: "Space Grotesk", sans-serif;
   }
@@ -60,8 +60,8 @@
     @apply bg-background text-foreground;
     font-family: var(--font-body);
     background-image:
-      radial-gradient(circle at top, hsl(196 100% 77% / 0.08), transparent 22%),
-      linear-gradient(180deg, hsl(222 40% 9%), hsl(217 32% 12%));
+      radial-gradient(circle at top, hsl(193 100% 70% / 0.05), transparent 18%),
+      linear-gradient(180deg, hsl(228 46% 5%), hsl(223 38% 8%));
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -84,24 +84,25 @@
     background-clip: text;
   }
   .shadow-gold { box-shadow: var(--shadow-gold); }
-  .glow-gold { box-shadow: 0 0 18px hsl(196 100% 78% / 0.25), 0 0 54px hsl(196 100% 78% / 0.12); }
+  .glow-gold { box-shadow: 0 0 18px hsl(193 100% 70% / 0.22), 0 0 54px hsl(193 100% 70% / 0.1); }
   .bg-noise {
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.35) 0 1px, transparent 1px),
-      radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.2) 0 1px, transparent 1px),
-      radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px),
-      radial-gradient(circle at 60% 90%, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px);
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.22) 0 1px, transparent 1px),
+      radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px),
+      radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px),
+      radial-gradient(circle at 60% 90%, rgba(255, 255, 255, 0.1) 0 1px, transparent 1px);
     background-size: 180px 180px;
   }
   .bg-frost {
     background-image:
-      radial-gradient(circle at 12% 16%, rgba(255,255,255,0.08), transparent 16%),
-      radial-gradient(circle at 78% 22%, rgba(180,229,255,0.08), transparent 18%),
-      linear-gradient(135deg, rgba(255,255,255,0.05), transparent 45%, rgba(177,230,255,0.04));
+      radial-gradient(circle at 14% 18%, rgba(255,255,255,0.04), transparent 16%),
+      radial-gradient(circle at 76% 20%, rgba(90,190,255,0.04), transparent 18%),
+      linear-gradient(135deg, rgba(255,255,255,0.02), transparent 45%, rgba(120,210,255,0.025));
   }
   .ice-panel {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(15,22,40,0.9), rgba(10,14,28,0.84));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 18px 44px rgba(0,0,0,0.28);
     backdrop-filter: blur(18px);
   }
   .status-live {
@@ -109,8 +110,8 @@
     align-items: center;
     gap: 0.55rem;
     border-radius: 9999px;
-    border: 1px solid rgba(186, 235, 255, 0.18);
-    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(135, 222, 255, 0.18);
+    background: rgba(8, 14, 28, 0.76);
     padding: 0.45rem 0.85rem;
     font-size: 0.72rem;
     font-weight: 700;
